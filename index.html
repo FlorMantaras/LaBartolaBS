@@ -8,16 +8,17 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>La Bartola</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg header">
-    <div class="container-fluid align-items-start">
+  <nav class="navbar navbar-expand-lg navColor">
+    <div class="container-fluid align-items-center">
         <a class="navbar-brand col-4" href="./index.html"><img class="logo" data-aos="fade-right" data-aos-duration="3000"data-aos-delay="300"  src="./assets/img/LogoLaBartola3.png" alt="LogoLaBartola3"></a>
-        <button class="navbar-toggler color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler color1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse desplegable text-end align-self-start" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse desplegable text-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link activar" aria-current="page" href="./index.html">Inicio</a>
@@ -38,21 +39,21 @@
         </div>
     </div>
 </nav>
-  <main>
-    <main class="mainIndex">
-        <div class="main_nosotros">
-            <a href="./pages/nosotros.html">NOSOTROS</a>
-        </div>
-        <div class="main_productos">
-            <a href="./pages/productos.html">PRODUCTOS</a>
-        </div>
-        <div class="main_proyectos" >
-            <a href="./pages/proyectos.html">PROYECTOS</a>
-        </div>
-        <div class="main_contacto" >
-            <a href="./pages/contacto.html">CONTACTO</a>
-        </div>
-    </main>
+  <main class="mainIndex">
+    <div class="imgFondo"></div>
+    <div class="main_nosotros">
+       <a href="./pages/nosotros.html">NOSOTROS</a>
+    </div>
+    <div class="main_productos">
+      <a href="./pages/productos.html">PRODUCTOS</a>
+    </div>
+    <div class="main_proyectos" >
+      <a href="./pages/proyectos.html">PROYECTOS</a>
+    </div>
+    <div class="main_contacto" >
+      <a href="./pages/contacto.html">CONTACTO</a>
+    </div> 
+  </main>
   <footer>
     <div>
       <p class="h1">LA BARTOLA</p>
@@ -76,7 +77,11 @@
       </a>
     </div>
   </footer>
-  <!-- JavaScript Bundle with Popper -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>   
 </body>
 </html>
